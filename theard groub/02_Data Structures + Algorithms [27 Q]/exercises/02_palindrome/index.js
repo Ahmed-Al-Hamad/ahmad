@@ -7,6 +7,11 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+function palindrome(str) {
+    let bool
+let rev_1_String=str.split("").reverse().join("");
+(rev_1_String===str)? bool=true:bool= false
+return bool
+}
 
 module.exports = palindrome;
