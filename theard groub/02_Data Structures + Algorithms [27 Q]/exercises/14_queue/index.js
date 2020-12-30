@@ -8,6 +8,21 @@
 //     q.add(1);
 //     q.remove(); // returns 1;
 
-class Queue {}
+class Queue {
+    constructor() 
+    { 
+        this.items = []; 
+    } 
+    enqueue(element) 
+{     
+    this.items.push(element); 
+} 
+dequeue() 
+{ 
+    if(this.isEmpty()) 
+        return "Underflow"; 
+    return this.items.shift(); 
+}
+}
 
 module.exports = Queue;
