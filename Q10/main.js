@@ -7,8 +7,20 @@ Write a function that returns the number of
 occurrences of the most frequent character in a sentence.
 */
 
-function timesOfMostFreqChar() {
+function timesOfMostFreqChar(str) {
   // YOUR CODE HERE
+  const arrChar=str.split('')
+  let maxKey=0
+  const obj={}
+  for(let i=0;i<arrChar.length;i++){
+      obj[arrChar[i]]=1+(obj[arrChar[i]]||0)
+  }
+  for(key in obj){
+    if(obj[key]>maxKey){
+      maxKey=obj[key]
+    }
+  }
+  return maxKey
 }
 
 /* 
