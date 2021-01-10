@@ -10,18 +10,19 @@ possible sum of any n consecutive numbers in an
 
 function largestPossibleSum(arr,n) {
   // YOUR CODE HERE
- /*  const arrSumByN=[];
-  let sum=0;
-  for(let i=0;i<arr.length;i++){
-    for(let i=1;i<n;i++){
-      if(arrSumByN.length===0){
-        arrSumByN[i]=arrSumByN[i]+arr[i]
-      }
-      else sum+=arr[i]
+  let result = 0;
+  let temp_sum = 0;
+  for (var i = 0; i < n - 1; i++) {
+    temp_sum += nums[i];
+  }
+  for (var i = n - 1; i < arr.length; i++) {
+    temp_sum += nums[i];
+    if (temp_sum > result) {
+      result = temp_sum;
     }
-    if(arrSumByN[i])
-  } */
-
+    temp_sum -= nums[i - k + 1];
+  }
+  return result;
 }
 
 /* 
