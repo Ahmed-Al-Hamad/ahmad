@@ -6,8 +6,17 @@ console.log('Problem Solving Q:16 ');
 Find the first item that occurs an even number of times in an array.
 */
 
-function evenOccurrence() {
+function evenOccurrence(arr) {
   // YOUR CODE HERE
+   const obj={}
+   for(let i=0;i<arr.length;i++){
+     obj[arr[i]]=1+(obj[arr[i]]||0)
+   }
+    for(key in obj){
+      if(obj[key]%2===0){
+        return key
+      }
+    }
 }
 
 /* 

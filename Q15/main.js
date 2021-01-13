@@ -8,8 +8,9 @@ Your function should return the common characters in the same order that they ap
 Do not return duplicate characters and ignore whitespace in your returned string.
 */
 
-function commonCharacters() {
+function commonCharacters(str1,str2) {
   // YOUR CODE HERE
+  
 }
 
 /* 
