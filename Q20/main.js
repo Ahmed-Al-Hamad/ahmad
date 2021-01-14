@@ -6,8 +6,9 @@ console.log('Problem Solving Q: 20');
 Write a function that accepts an array of integers and returns the largest product possible from three of those numbers.
 */
 
-function largestProductOfThree() {
-  // YOUR CODE HERE
+function largestProductOfThree(arr) {
+  let arrSort=arr.sort((a,b)=>b-a)
+   return arrSort[0]*arrSort[1]*arrSort[2]
 }
 
 /* 
