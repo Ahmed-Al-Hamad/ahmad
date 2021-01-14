@@ -3,12 +3,14 @@ console.log('Problem Solving Q:23 ');
 /*parseQueryString   */
 
 /*  
-Given a properly formatted URL, return the query string data as an array of key-value pairs, in the order that they appear.
+Given a properly formatted URL, return the query string data as an array of key-value pairs, 
+in the order that they appear.
 If the url does not contain a query string, return undefined
 */
 
 function parseQueryString() {
   // YOUR CODE HERE
+
 }
 
 
