@@ -10,7 +10,15 @@ Do not return duplicate characters and ignore whitespace in your returned string
 
 function commonCharacters(str1,str2) {
   // YOUR CODE HERE
-  
+  let arr1=str1.split(" ").split("")
+  let arr2=str2.split(" ").split("")
+  let array=[]
+  for(let i=0;i<arr1.length;i++){
+    if(arr2.includes(arr1[i])){
+            array.push(arr1[i])
+    }
+  }
+  return array.join("")
 }
 
 /* 

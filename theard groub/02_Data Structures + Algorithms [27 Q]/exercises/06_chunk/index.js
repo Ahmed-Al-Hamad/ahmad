@@ -1,6 +1,6 @@
 // --- Directions
-// Given an array and chunk size, divide the array into many subarrays
-// where each subarray is of length size
+//  Given an array and chunk size, divide the array into many subarrays
+//  where each subarray is of length size
 // --- Examples
 // chunk([1, 2, 3, 4], 2) --> [[ 1, 2], [3, 4]]
 // chunk([1, 2, 3, 4, 5], 2) --> [[ 1, 2], [3, 4], [5]]
@@ -9,10 +9,13 @@
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
 function chunk(array, size) {
-    // declear empty arry
-    // for loop 
-    // itreate on arry by size
-    // push element on empty arry
+    const chunkArray=[]
+    let count=0;
+    while(count<array.length){
+        chunkArray.push(array.slice(count,count+size))
+        count+=size
+    }       
+    return chunkArray                                                  
 }
 
 module.exports = chunk;
