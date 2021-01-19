@@ -27,7 +27,7 @@ function steps(n) {
       } else {
       step += ' ';
 }
-         }
+ }
  console.log(step)
  }
                                 
