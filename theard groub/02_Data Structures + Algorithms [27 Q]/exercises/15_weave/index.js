@@ -23,9 +23,12 @@
 //    q.remove() // 'There'
 
 const Queue = require('./queue');
+const STACK=require('./stack');
 
 function weave(sourceOne, sourceTwo) {
-            
+            return function name(params) {
+                
+            }
 }
 
 module.exports = weave;

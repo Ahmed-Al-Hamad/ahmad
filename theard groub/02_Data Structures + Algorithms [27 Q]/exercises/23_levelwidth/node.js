@@ -7,4 +7,5 @@ module.exports = class Node {
   add(data) {
     this.children.push(new Node(data));
   }
+
 };
